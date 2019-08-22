@@ -1,0 +1,37 @@
+The purpose of this project is to provide access to fonts to use with the Tiny4kOLED project,
+even if their license is not compatible with the MIT license used by the Tiny4kOLED project.
+
+boxyfont.h
+
+Code Page 437 box drawing characters
+Font created by Stephen Denne. (Public domain/OFL)
+
+font8x16atari.h
+
+Supplied by: Sebastian Völke
+Possible source: https://www.dafont.com/atari-st-8x16-system-font.font
+Rudolf Polzer (DivVerent) said he was given permission from Atari to distribute it for personal use.
+
+font11x16.h
+
+Supplied by: Jonathan Vargas
+Source: https://lexus2k.github.io/ssd1306/ssd1306__fonts_8c_source.html (MIT)
+
+font16x16cn.h
+
+Inherited from the Tinysaur ssd1306xled project example of how to create custom fonts
+Source: https://bitbucket.org/tinusaur/ssd1306xled/src/devel/ssd1306xled/font16x16cn.h (MIT?)
+
+ModernDos.h
+ModernDos8.h
+
+Supplied by: Sebastian Völke
+Source: https://www.dafont.com/moder-dos-437.font
+Possible source: https://www.dafont.com/modern-dos.font (Public domain/GPL/OFL)
+Possible source: https://www.1001freefonts.com/moder-dos-437.font (Free)
+
+PixelOperator.h
+PixelOperatorBold.h
+
+Supplied by: Sebastian Völke
+Source: https://www.dafont.com/pixel-operator.font (Public domain/GPL/OFL)
