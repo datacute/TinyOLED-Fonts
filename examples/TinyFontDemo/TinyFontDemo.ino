@@ -29,6 +29,9 @@ const DCfont *currentFont = FONT6X8;
 //#include "font16x16cn.h"
 //const DCfont *currentFont = (&TinyOLED4kfont16x16cn);
 
+//#include "font16x32digits.h"
+//const DCfont *currentFont = FONT16X32DIGITS;
+
 //#include "ModernDos.h"
 //const DCfont *currentFont = FONT8X16MDOS;
 

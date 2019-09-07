@@ -8,7 +8,7 @@ Font created by Stephen Denne. (Public domain/OFL)
 
 font8x16atari.h
 
-Supplied by: Sebastian Völke
+Supplied by: Sebastian Vï¿½lke
 Possible source: https://www.dafont.com/atari-st-8x16-system-font.font
 Rudolf Polzer (DivVerent) said he was given permission from Atari to distribute it for personal use.
 
@@ -22,10 +22,14 @@ font16x16cn.h
 Inherited from the Tinysaur ssd1306xled project example of how to create custom fonts
 Source: https://bitbucket.org/tinusaur/ssd1306xled/src/devel/ssd1306xled/font16x16cn.h (MIT?)
 
+font16x32digits.h
+
+Source: https://sites.google.com/site/pre2arduino/home/huge-font-on-a-tinny-oled-atiny85-1 (Unknown license)
+
 ModernDos.h
 ModernDos8.h
 
-Supplied by: Sebastian Völke
+Supplied by: Sebastian Vï¿½lke
 Source: https://www.dafont.com/moder-dos-437.font
 Possible source: https://www.dafont.com/modern-dos.font (Public domain/GPL/OFL)
 Possible source: https://www.1001freefonts.com/moder-dos-437.font (Free)
@@ -33,5 +37,5 @@ Possible source: https://www.1001freefonts.com/moder-dos-437.font (Free)
 PixelOperator.h
 PixelOperatorBold.h
 
-Supplied by: Sebastian Völke
+Supplied by: Sebastian Vï¿½lke
 Source: https://www.dafont.com/pixel-operator.font (Public domain/GPL/OFL)
