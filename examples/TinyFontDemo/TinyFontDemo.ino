@@ -44,8 +44,84 @@ const DCfont *currentFont = FONT6X8;
 //#include "PixelOperatorBold.h"
 //const DCfont *currentFont = FONT8X16POB;
 
+//#include "5x5_font.h"
+//const DCfont *currentFont = FONT5X5;
+
+//#include "7linedigital_font.h"
+//const DCfont *currentFont = FONT7LINEDIGITAL;
+
+//#include "acme_5_outlines_font.h"
+//const DCfont *currentFont = FONTACME5OUTLINES;
+
+//#include "aztech_font.h"
+//const DCfont *currentFont = FONTAZTECH;
+
+//#include "Blokus_font.h"
+//const DCfont *currentFont = FONTBLOKUS;
+
+//#include "BMplain_font.h"
+//const DCfont *currentFont = FONTBMPLAIN;
+
+//#include "BMSPA_font.h"
+//const DCfont *currentFont = FONTBMSPA;
+
+//#include "bubblesstandard_font.h"
+//const DCfont *currentFont = FONTBUBBLESSTANDARD;
+
+//#include "Commo-Monospaced_font.h"
+//const DCfont *currentFont = FONTCOMMOMONOSPACED;
+
+//#include "crackers_font.h"
+//const DCfont *currentFont = FONTCRACKERS;
+
+//#include "formplex12_font.h"
+//const DCfont *currentFont = FONTFORMPLEX12;
+
+//#include "haiku_font.h"
+//const DCfont *currentFont = FONTHAIKU;
+
+//#include "HISKYF21_font.h"
+//const DCfont *currentFont = FONTHISKYF21;
+
+//#include "homespun_font.h"
+//const DCfont *currentFont = FONTHOMESPUN;
+
+//#include "HUNTER_font.h"
+//const DCfont *currentFont = FONTHUNTER;
+
+//#include "m38_font.h"
+//const DCfont *currentFont = FONTM38;
+
+//#include "Minimum+1_font.h"
+//const DCfont *currentFont = FONTMINIMUM1;
+
+//#include "Minimum_font.h"
+//const DCfont *currentFont = FONTMINIMUM;
+
+//#include "pzim3x5_font.h"
+//const DCfont *currentFont = FONTPZIM3X5;
+
+//#include "Raumsond_font.h"
+//const DCfont *currentFont = FONTRAUMSOND;
+
+//#include "renew_font.h"
+//const DCfont *currentFont = FONTRENEW;
+
+//#include "sloth_font.h"
+//const DCfont *currentFont = FONTSLOTH;
+
+//#include "SUPERDIG_font.h"
+//const DCfont *currentFont = FONTSUPERDIG;
+
+//#include "tama_mini02_font.h"
+//const DCfont *currentFont = FONTTAMAMINI02;
+
+//#include "zxpix_font.h"
+//const DCfont *currentFont = FONTZXPIX;
+
 // ============================================================================
 
+uint8_t spacing = 1;
 uint8_t currentCharacter = currentFont->first;
 
 void setup() {
@@ -80,8 +156,9 @@ void drawScreen() {
 }
 
 char printLineOfText(char c) {
-  for (uint8_t x = 0; x + currentFont->width <= 128; x += currentFont->width) {
+  for (uint8_t x = 0; x + currentFont->width <= 128; x += currentFont->width + spacing) {
     oled.print(c);
+    oled.fillLength(0, spacing);
     if ((uint8_t)c < currentFont->last) {
       c++;
     } else {
