@@ -12,7 +12,9 @@
 
 // Fonts that come with Tiny4kOLED
 const DCfont *currentFont = FONT6X8;
+//const DCfont *currentFont = FONT6X8P;
 //const DCfont *currentFont = FONT8X16;
+//const DCfont *currentFont = FONT8X16P;
 //const DCfont *currentFont = FONT8X16DIGITS;
 
 // Fonts from this TinyOLED-Fonts library
@@ -121,14 +123,18 @@ const DCfont *currentFont = FONT6X8;
 
 // ============================================================================
 
-uint8_t spacing = 1;
-uint8_t currentCharacter = currentFont->first;
+uint8_t currentCharacter;
 
 void setup() {
   // put your setup code here, to run once:
 
   oled.begin();
   oled.setFont(currentFont);
+  if (currentFont->width == 0) {
+    oled.setSpacing(1);
+  } else {
+    oled.setSpacing(currentFont->spacing + 1);
+  }
   currentCharacter = currentFont->first;
   drawScreen();
   oled.on();
@@ -156,9 +162,8 @@ void drawScreen() {
 }
 
 char printLineOfText(char c) {
-  for (uint8_t x = 0; x + currentFont->width <= 128; x += currentFont->width + spacing) {
+  while (oled.getCursorX() + oled.getCharacterWidth(c) <= 128) {
     oled.print(c);
-    oled.fillLength(0, spacing);
     if ((uint8_t)c < currentFont->last) {
       c++;
     } else {
