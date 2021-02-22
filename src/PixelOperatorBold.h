@@ -22,7 +22,7 @@
 // ----------------------------------------------------------------------------
 
 /* Font Information:
-/* Pixel Operator Bold (previously known as the 8-bit Operator) is a libre/free raster proportional 
+ * Pixel Operator Bold (previously known as the 8-bit Operator) is a libre/free raster proportional 
  * and monospace sans serif typeface.
  * Source files are available at NotABug: https://notabug.org/HarvettFox96/ttf-pixeloperator
  *

@@ -22,7 +22,7 @@
 // ----------------------------------------------------------------------------
 
 /* Font Information:
-/* Modern DOS is a raster monospace serif based on IBM and Verite, extracted from VGA ROM typefaces
+ * Modern DOS is a raster monospace serif based on IBM and Verite, extracted from VGA ROM typefaces
  * in real machines by various manufacturers, created with FontForge.
  * Source files available on NotABug: https://notabug.org/HarvettFox96/ttf-moderndos
  *
