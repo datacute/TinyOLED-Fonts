@@ -1,5 +1,5 @@
-#/* Font data from https://jared.geek.nz/2014/jan/custom-fonts-for-microcontrollers */
-include <avr/pgmspace.h>
+/* Font data from https://jared.geek.nz/2014/jan/custom-fonts-for-microcontrollers */
+#include <avr/pgmspace.h>
 const uint8_t ssd1306xled_fontaztech [] PROGMEM = {
   0x00,0x00,0x00,0x00,0x00,0x00, // 0x20 32  
   0x00,0x2e,0x00,0x00,0x00,0x00, // 0x21 33 !
